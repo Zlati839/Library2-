@@ -40,12 +40,12 @@ st.header("search by title")
 s_title = st.text_input("input your title")
 if st.button("search by title"):
     found = False
-  for book in st.session_state.books:
-    if book["title"] == s_title:
-      st.write(book)
-      found = True
- if not found :
-   st.write("No such title") 
+    for book in st.session_state.books:
+      if book["title"] == s_title:
+        st.write(book)
+        found = True
+     if not found :
+      st.write("No such title") 
 #======================Cheapest book============
 if st.button("search for the cheapest book"):
   if len(st.session_state.books) == 0 :
