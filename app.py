@@ -44,8 +44,8 @@ if st.button("search by title"):
       if book["title"] == s_title:
         st.write(book)
         found = True
-     if not found :
-      st.write("No such title") 
+      if not found :
+        st.write("No such title") 
 #======================Cheapest book============
 if st.button("search for the cheapest book"):
   if len(st.session_state.books) == 0 :
