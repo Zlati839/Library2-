@@ -37,7 +37,7 @@ if st.button("search"):
       st.write("No such author")
 #==================search for title============
 st.header("search by title")
-s_title = st.text_input("input your title')
+s_title = st.text_input("input your title")
 if st.button("search by title"):
     found = False
   for book in st.session_state.books:
