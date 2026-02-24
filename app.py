@@ -5,7 +5,7 @@ if "books" not in st.session_state:
   st.session_state.books = []
 #===============ADD=============
 st.header("ADD a book and its price , author , title ")
-tite = st.text_input("Title?")
+title = st.text_input("Title?")
 author = st.text_input("Author of the book")
 price = st.number_input("price", min_value = 0 )
 if st.button("Add the book ?"):
